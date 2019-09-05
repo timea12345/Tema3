@@ -1,0 +1,7 @@
+public class ElementulMaxim {
+    public static void main(String[] args) {
+    
+        int[] elements = {1, 2, 3, 4, 5};
+        System.out.println("Elementul maxim din acest array este: " + elements[elements.length-1]);
+    }
+}
