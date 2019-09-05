@@ -16,16 +16,21 @@ public class GhicitiNumarul {
             number = myObject.nextByte();
             count++;
 
-            if (number == rand1) {
-                System.out.println("Ai castigat!");
-            } else {
-                if (number > rand1) {
-                    System.out.println("Raspuns gresit, numarul tau este prea mare");
+            if (count <= 2) {
+                if (number == rand1) {
+                    System.out.println("Ai castigat!");
                 } else {
-                    System.out.println("Raspuns gresit, numarul tau este prea mic");
+                    if (number > rand1) {
+                        System.out.println("Raspuns gresit, numarul tau este prea mare");
+                    } else {
+                        System.out.println("Raspuns gresit, numarul tau este prea mic");
+                    }
                 }
+            } else {
+                if (number == rand1) {
+                    System.out.println("Ai castigat!");
+                } else System.out.println("Ai pierdut!");
             }
-
         } while (number!=rand1 & count<3);
 
 
